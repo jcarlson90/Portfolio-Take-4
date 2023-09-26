@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@300&family=Poiret+One&family=Raleway:wght@300&family=Sigmar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}  
+
+body {
+    color: antiquewhite;
+    background: #081b29;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .2S; 
+}
+
+.navbar a {
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: cornflowerblue;
+}
+
+.home {
+    height: 100vh;
+    /*background: url("https://i.imgur.com/vUfyaL6.jpg");
+    background-size: cover;
+    background-position: center;*/
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: .5s; 
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: cornflowerblue;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: .8s; 
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1.5s ease forwards;
+    animation-delay: 1s; 
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1.5s ease forwards;
+    animation-delay: 1.9s; 
+    z-index: 2;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .1s;
+}
+
+.btn-box a:hover {
+    color: cornflowerblue;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: cornflowerblue;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    color: #081b29;
+    background-color: cornflowerblue;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .1s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1.5s ease forwards;
+    animation-delay: 2.4s; 
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid cornflowerblue;
+    border-radius: 50%;
+    font-size: 30px;
+    color: cornflowerblue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .1s;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: cornflowerblue;
+    z-index: -1;
+    transition: .1s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: #081b29;
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 5rem;
+    margin-bottom: .1rem;
+    text-align: center;
+}
+
+span {
+    color: cornflowerblue; 
+}
+
+.about-img {
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border-top: .2rem solid cornflowerblue;
+    border-bottom: .2rem solid cornflowerblue;
+    border-left: .2rem solid #081b29;
+    border-right: .2rem solid #081b29;
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid #081b29;
+    border-bottom: .2rem solid #081b29;
+    border-left: .2rem solid cornflowerblue;
+    border-right: .2rem solid cornflowerblue;
+}
+
+.about-content{
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem;
+}

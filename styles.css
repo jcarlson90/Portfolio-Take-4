@@ -411,7 +411,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: #0f3d58;
+    background: #0b2d48;
     z-index: -1;
     transition: .3s;
 }
@@ -472,7 +472,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: #0f3d58;
+    background: #0b2d48;
     z-index: -1;
     transition: .3s;
 }
@@ -623,7 +623,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: #0f3d58;
+    background: #0b2d48;
     border-radius: .6rem;
     z-index: -1;
     transition: .5s;
@@ -666,3 +666,25 @@ span {
     
 }
 
+@media (max-width : 768px) {
+    .header {
+        background-color: #0b2d48;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #0b2d48;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
